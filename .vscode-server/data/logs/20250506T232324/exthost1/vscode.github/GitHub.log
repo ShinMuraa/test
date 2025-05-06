@@ -1,0 +1,3 @@
+2025-05-06 23:23:26.945 [info] ログ レベル: Info
+2025-05-06 23:23:35.141 [warning] [GitHubBranchProtectionProvider][updateRepositoryBranchProtection] Failed to update repository branch protection: No GitHub authentication session available.
+2025-05-06 23:28:02.015 [warning] [GitHubSourceControlHistoryItemDetailsProvider][_loadAssignableUsers] Failed to load assignable user(s) for ShinMuraa/test: Error: No GitHub authentication session available.

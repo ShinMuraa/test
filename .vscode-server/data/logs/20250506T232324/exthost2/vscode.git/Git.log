@@ -1,0 +1,45 @@
+2025-05-06 23:32:12.150 [info] [main] ログ レベル: Info
+2025-05-06 23:32:12.150 [info] [main] Git の検証が検出されました: "git"
+2025-05-06 23:32:12.150 [info] [main] "git" から Git "2.49.0" を使用しています
+2025-05-06 23:32:12.150 [info] [Model][doInitialScan] Initial repository scan started
+2025-05-06 23:32:12.150 [info] > git rev-parse --show-toplevel [2ms]
+2025-05-06 23:32:12.150 [info] > git rev-parse --git-dir --git-common-dir [1ms]
+2025-05-06 23:32:12.160 [info] [Model][openRepository] Opened repository: /home/shin/test
+2025-05-06 23:32:12.163 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-05-06 23:32:12.169 [info] > git config --get commit.template [3ms]
+2025-05-06 23:32:12.173 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-05-06 23:32:12.176 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/shin/test/.git/refs/remotes/origin/main'
+2025-05-06 23:32:12.176 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-06 23:32:12.182 [info] > git status -z -uall [3ms]
+2025-05-06 23:32:12.184 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [3ms]
+2025-05-06 23:32:12.237 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [39ms]
+2025-05-06 23:32:12.241 [info] > git config --get commit.template [3ms]
+2025-05-06 23:32:12.241 [info] > git config --get --local branch.main.vscode-merge-base [2ms]
+2025-05-06 23:32:12.241 [warning] [Git][config] git config failed: Failed to execute git
+2025-05-06 23:32:12.247 [info] > git reflog main --grep-reflog=branch: Created from *. [4ms]
+2025-05-06 23:32:12.248 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-06 23:32:12.250 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/shin/test/.git/refs/remotes/origin/main'
+2025-05-06 23:32:12.250 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [2ms]
+2025-05-06 23:32:12.252 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-05-06 23:32:12.279 [info] > git status -z -uall [26ms]
+2025-05-06 23:32:12.279 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [28ms]
+2025-05-06 23:32:12.282 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [26ms]
+2025-05-06 23:32:12.287 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-06 23:32:12.289 [info] > git config --add --local branch.main.vscode-merge-base origin/main [8ms]
+2025-05-06 23:32:12.293 [info] > git config --get --local branch.main.vscode-merge-base [4ms]
+2025-05-06 23:32:12.296 [info] > git config --get commit.template [4ms]
+2025-05-06 23:32:12.296 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [1ms]
+2025-05-06 23:32:12.301 [info] > git merge-base refs/heads/main refs/remotes/origin/main [2ms]
+2025-05-06 23:32:12.304 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2025-05-06 23:32:12.305 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/shin/test/.git/refs/remotes/origin/main'
+2025-05-06 23:32:12.306 [info] > git diff --name-status -z --diff-filter=ADMR 2c48f123499e7d83f5cac4fcd53b56d6bbb28d8b...refs/remotes/origin/main [3ms]
+2025-05-06 23:32:12.306 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-06 23:32:12.311 [info] > git status -z -uall [3ms]
+2025-05-06 23:32:12.312 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-05-06 23:32:12.673 [info] > git check-ignore -v -z --stdin [2ms]
+2025-05-06 23:32:13.388 [info] > git config --get commit.template [3ms]
+2025-05-06 23:32:13.388 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-05-06 23:32:13.390 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/shin/test/.git/refs/remotes/origin/main'
+2025-05-06 23:32:13.390 [info] > git rev-parse refs/remotes/origin/main [0ms]
+2025-05-06 23:32:13.394 [info] > git status -z -uall [2ms]
+2025-05-06 23:32:13.394 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
