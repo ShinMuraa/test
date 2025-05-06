@@ -469,3 +469,74 @@ error: failed to push some refs to 'https://github.com/ShinMuraa/test.git'
 2025-05-06 23:32:58.697 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
 2025-05-06 23:32:58.703 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
 2025-05-06 23:32:58.708 [info] > git status -z -uall [8ms]
+2025-05-06 23:33:02.769 [info] > git add -A -- . [605ms]
+2025-05-06 23:33:02.769 [info] warning: adding embedded git repository: test
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint: 	git submodule add <url> test
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint: 	git rm --cached test
+hint:
+hint: See "git help submodule" for more information.
+hint: Disable this message with "git config set advice.addEmbeddedRepo false"
+2025-05-06 23:33:02.776 [info] > git config --get commit.template [2ms]
+2025-05-06 23:33:02.777 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-05-06 23:33:02.782 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-05-06 23:33:02.789 [info] > git status -z -uall [10ms]
+2025-05-06 23:33:03.504 [info] > git show --textconv :.git/COMMIT_EDITMSG [2ms]
+2025-05-06 23:33:03.507 [info] > git ls-files --stage -- .git/COMMIT_EDITMSG [3ms]
+2025-05-06 23:33:03.510 [info] > git hash-object -t tree /dev/null [3ms]
+2025-05-06 23:33:03.510 [warning] [GitFileSystemProvider][readFile] File not found - git:/home/shin/.git/COMMIT_EDITMSG.git?%7B%22path%22%3A%22%2Fhome%2Fshin%2F.git%2FCOMMIT_EDITMSG%22%2C%22ref%22%3A%22%22%7D
+2025-05-06 23:33:03.512 [info] > git hash-object -t tree /dev/null [2ms]
+2025-05-06 23:33:03.513 [warning] [GitFileSystemProvider][stat] File not found - git:/home/shin/.git/COMMIT_EDITMSG.git?%7B%22path%22%3A%22%2Fhome%2Fshin%2F.git%2FCOMMIT_EDITMSG%22%2C%22ref%22%3A%22%22%7D
+2025-05-06 23:33:03.819 [info] > git check-ignore -v -z --stdin [2ms]
+2025-05-06 23:33:15.204 [info] > git show --textconv :README.md [8ms]
+2025-05-06 23:33:15.204 [info] > git show --textconv HEAD:README.md [6ms]
+2025-05-06 23:33:15.204 [info] > git ls-files --stage -- README.md [4ms]
+2025-05-06 23:33:15.208 [info] > git cat-file -s 9c77a40f8ebdc3f55d4ba9892f335553d8c98466 [2ms]
+2025-05-06 23:33:15.208 [info] > git ls-tree -l HEAD -- README.md [5ms]
+2025-05-06 23:33:21.198 [info] > git show --textconv :.git/COMMIT_EDITMSG [3ms]
+2025-05-06 23:33:21.199 [warning] [GitFileSystemProvider][readFile] File not found - git:/home/shin/.git/COMMIT_EDITMSG.git?%7B%22path%22%3A%22%2Fhome%2Fshin%2F.git%2FCOMMIT_EDITMSG%22%2C%22ref%22%3A%22%22%7D
+2025-05-06 23:33:21.199 [info] > git ls-files --stage -- .git/COMMIT_EDITMSG [2ms]
+2025-05-06 23:33:21.200 [warning] [GitFileSystemProvider][stat] File not found - git:/home/shin/.git/COMMIT_EDITMSG.git?%7B%22path%22%3A%22%2Fhome%2Fshin%2F.git%2FCOMMIT_EDITMSG%22%2C%22ref%22%3A%22%22%7D
+2025-05-06 23:33:27.605 [info] > git blame --root --incremental 2c48f123499e7d83f5cac4fcd53b56d6bbb28d8b -- .git/COMMIT_EDITMSG [1ms]
+2025-05-06 23:33:27.605 [info] fatal: no such path .git/COMMIT_EDITMSG in 2c48f123499e7d83f5cac4fcd53b56d6bbb28d8b
+2025-05-06 23:34:12.346 [info] > git -c user.useConfigOnly=true commit --quiet [69537ms]
+2025-05-06 23:34:12.354 [info] > git config --get commit.template [3ms]
+2025-05-06 23:34:12.356 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-06 23:34:12.364 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-05-06 23:34:12.454 [info] > git status -z -uall [94ms]
+2025-05-06 23:34:12.473 [info] > git merge-base refs/heads/main refs/remotes/origin/main [7ms]
+2025-05-06 23:34:12.476 [info] > git config --get commit.template [5ms]
+2025-05-06 23:34:12.479 [info] > git diff --name-status -z --diff-filter=ADMR 2c48f123499e7d83f5cac4fcd53b56d6bbb28d8b...refs/remotes/origin/main [4ms]
+2025-05-06 23:34:12.480 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-05-06 23:34:12.486 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-05-06 23:34:12.492 [info] > git status -z -uall [9ms]
+2025-05-06 23:34:12.505 [info] > git config --get commit.template [1ms]
+2025-05-06 23:34:12.508 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-05-06 23:34:12.514 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-05-06 23:34:12.519 [info] > git status -z -uall [9ms]
+2025-05-06 23:34:12.879 [info] > git show --textconv :README.md [2ms]
+2025-05-06 23:34:12.881 [info] > git ls-files --stage -- README.md [2ms]
+2025-05-06 23:34:12.884 [info] > git cat-file -s 9c77a40f8ebdc3f55d4ba9892f335553d8c98466 [1ms]
+2025-05-06 23:34:12.935 [info] > git blame --root --incremental 58e7c166831ed246b01cf9f6ce93961a7042ba2f -- README.md [2ms]
+2025-05-06 23:34:12.980 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent -n50 --skip=0 --topo-order --decorate=full --stdin [490ms]
+2025-05-06 23:34:13.231 [info] > git check-ignore -v -z --stdin [2ms]
+2025-05-06 23:34:13.473 [info] > git ls-files --stage -- README.md [1ms]
+2025-05-06 23:34:13.476 [info] > git cat-file -s 9c77a40f8ebdc3f55d4ba9892f335553d8c98466 [1ms]
+2025-05-06 23:34:13.484 [info] > git show --textconv :README.md [2ms]
+2025-05-06 23:34:18.710 [info] > git config --get commit.template [2ms]
+2025-05-06 23:34:18.710 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-05-06 23:34:18.716 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-05-06 23:34:18.722 [info] > git status -z -uall [9ms]
+2025-05-06 23:34:22.082 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent -n50 --skip=0 --topo-order --decorate=full --stdin [132ms]
+2025-05-06 23:34:23.731 [info] > git config --get commit.template [3ms]
+2025-05-06 23:34:23.731 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-05-06 23:34:23.738 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-05-06 23:34:23.743 [info] > git status -z -uall [9ms]
